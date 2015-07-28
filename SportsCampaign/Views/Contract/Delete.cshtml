@@ -1,0 +1,41 @@
+﻿@model SportsCampaign.Models.contactTable
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/_AdminLayoutPage.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>contactTable</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.senderName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.senderName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.senderEmail)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.senderEmail)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.senderMessage)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.senderMessage)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

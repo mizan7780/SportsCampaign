@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SportsCampaignDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CampaignBookedInfo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PlayerName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PlayerAge" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="campaignID" Type="int" Nullable="false" />
+          <Property Name="ContactNumber" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="catagoryID" Type="int" Nullable="false" />
+          <Property Name="MedicalCondition" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CampaignTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="campaignName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="campaignDescription" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="catagoryName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Duration" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="instructorName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="catagoryTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="catagoryName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="contactTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="senderName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="senderEmail" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="senderMessage" Type="varchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RegisterTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="firstName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="lastName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="userName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="userPassword" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="userName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="userPassword" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="userType" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <Association Name="FK__CampaignB__campa__5CD6CB2B">
+          <End Role="CampaignTable" Type="Self.CampaignTable" Multiplicity="1" />
+          <End Role="CampaignBookedInfo" Type="Self.CampaignBookedInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CampaignTable">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="CampaignBookedInfo">
+              <PropertyRef Name="campaignID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CampaignB__catag__5DCAEF64">
+          <End Role="catagoryTable" Type="Self.catagoryTable" Multiplicity="1" />
+          <End Role="CampaignBookedInfo" Type="Self.CampaignBookedInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="catagoryTable">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="CampaignBookedInfo">
+              <PropertyRef Name="catagoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SportsCampaignDBModelStoreContainer">
+          <EntitySet Name="CampaignBookedInfo" EntityType="Self.CampaignBookedInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CampaignTable" EntityType="Self.CampaignTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="catagoryTable" EntityType="Self.catagoryTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="contactTable" EntityType="Self.contactTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RegisterTable" EntityType="Self.RegisterTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserTable" EntityType="Self.UserTable" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__CampaignB__campa__5CD6CB2B" Association="Self.FK__CampaignB__campa__5CD6CB2B">
+            <End Role="CampaignTable" EntitySet="CampaignTable" />
+            <End Role="CampaignBookedInfo" EntitySet="CampaignBookedInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CampaignB__catag__5DCAEF64" Association="Self.FK__CampaignB__catag__5DCAEF64">
+            <End Role="catagoryTable" EntitySet="catagoryTable" />
+            <End Role="CampaignBookedInfo" EntitySet="CampaignBookedInfo" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SportsCampaignDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="RegisterTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="firstName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="lastName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="userName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="userPassword" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="SportsCampaignDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="RegisterTables" EntityType="Self.RegisterTable" />
+          <EntitySet Name="contactTables" EntityType="SportsCampaignDBModel.contactTable" />
+          <EntitySet Name="CampaignTables" EntityType="SportsCampaignDBModel.CampaignTable" />
+          <EntitySet Name="catagoryTables" EntityType="SportsCampaignDBModel.catagoryTable" />
+          <EntitySet Name="CampaignBookedInfoes" EntityType="SportsCampaignDBModel.CampaignBookedInfo" />
+          <AssociationSet Name="FK__CampaignB__campa__5CD6CB2B" Association="SportsCampaignDBModel.FK__CampaignB__campa__5CD6CB2B">
+            <End Role="CampaignTable" EntitySet="CampaignTables" />
+            <End Role="CampaignBookedInfo" EntitySet="CampaignBookedInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CampaignB__catag__5DCAEF64" Association="SportsCampaignDBModel.FK__CampaignB__catag__5DCAEF64">
+            <End Role="catagoryTable" EntitySet="catagoryTables" />
+            <End Role="CampaignBookedInfo" EntitySet="CampaignBookedInfoes" />
+          </AssociationSet>
+          <EntitySet Name="UserTables" EntityType="SportsCampaignDBModel.UserTable" />
+          </EntityContainer>
+        <EntityType Name="contactTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="senderName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="senderEmail" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="senderMessage" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CampaignTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="campaignName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="campaignDescription" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="catagoryName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Duration" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="instructorName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CampaignBookedInfoes" Relationship="SportsCampaignDBModel.FK__CampaignB__campa__5CD6CB2B" FromRole="CampaignTable" ToRole="CampaignBookedInfo" />
+        </EntityType>
+        <EntityType Name="catagoryTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="catagoryName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CampaignBookedInfoes" Relationship="SportsCampaignDBModel.FK__CampaignB__catag__5DCAEF64" FromRole="catagoryTable" ToRole="CampaignBookedInfo" />
+        </EntityType>
+        <EntityType Name="CampaignBookedInfo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PlayerName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PlayerAge" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="campaignID" Type="Int32" Nullable="false" />
+          <Property Name="ContactNumber" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="catagoryID" Type="Int32" Nullable="false" />
+          <Property Name="MedicalCondition" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CampaignTable" Relationship="SportsCampaignDBModel.FK__CampaignB__campa__5CD6CB2B" FromRole="CampaignBookedInfo" ToRole="CampaignTable" />
+          <NavigationProperty Name="catagoryTable" Relationship="SportsCampaignDBModel.FK__CampaignB__catag__5DCAEF64" FromRole="CampaignBookedInfo" ToRole="catagoryTable" />
+        </EntityType>
+        <Association Name="FK__CampaignB__campa__5CD6CB2B">
+          <End Type="SportsCampaignDBModel.CampaignTable" Role="CampaignTable" Multiplicity="1" />
+          <End Type="SportsCampaignDBModel.CampaignBookedInfo" Role="CampaignBookedInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CampaignTable">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="CampaignBookedInfo">
+              <PropertyRef Name="campaignID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CampaignB__catag__5DCAEF64">
+          <End Type="SportsCampaignDBModel.catagoryTable" Role="catagoryTable" Multiplicity="1" />
+          <End Type="SportsCampaignDBModel.CampaignBookedInfo" Role="CampaignBookedInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="catagoryTable">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="CampaignBookedInfo">
+              <PropertyRef Name="catagoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="UserTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="userPassword" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="userType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SportsCampaignDBModelStoreContainer" CdmEntityContainer="SportsCampaignDBEntities">
+          <EntitySetMapping Name="RegisterTables">
+            <EntityTypeMapping TypeName="SportsCampaignDBModel.RegisterTable">
+              <MappingFragment StoreEntitySet="RegisterTable">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="userPassword" ColumnName="userPassword" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="contactTables">
+            <EntityTypeMapping TypeName="SportsCampaignDBModel.contactTable">
+              <MappingFragment StoreEntitySet="contactTable">
+                <ScalarProperty Name="senderMessage" ColumnName="senderMessage" />
+                <ScalarProperty Name="senderEmail" ColumnName="senderEmail" />
+                <ScalarProperty Name="senderName" ColumnName="senderName" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CampaignTables">
+            <EntityTypeMapping TypeName="SportsCampaignDBModel.CampaignTable">
+              <MappingFragment StoreEntitySet="CampaignTable">
+                <ScalarProperty Name="instructorName" ColumnName="instructorName" />
+                <ScalarProperty Name="Duration" ColumnName="Duration" />
+                <ScalarProperty Name="catagoryName" ColumnName="catagoryName" />
+                <ScalarProperty Name="campaignDescription" ColumnName="campaignDescription" />
+                <ScalarProperty Name="campaignName" ColumnName="campaignName" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="catagoryTables">
+            <EntityTypeMapping TypeName="SportsCampaignDBModel.catagoryTable">
+              <MappingFragment StoreEntitySet="catagoryTable">
+                <ScalarProperty Name="catagoryName" ColumnName="catagoryName" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CampaignBookedInfoes">
+            <EntityTypeMapping TypeName="SportsCampaignDBModel.CampaignBookedInfo">
+              <MappingFragment StoreEntitySet="CampaignBookedInfo">
+                <ScalarProperty Name="MedicalCondition" ColumnName="MedicalCondition" />
+                <ScalarProperty Name="catagoryID" ColumnName="catagoryID" />
+                <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+                <ScalarProperty Name="campaignID" ColumnName="campaignID" />
+                <ScalarProperty Name="PlayerAge" ColumnName="PlayerAge" />
+                <ScalarProperty Name="PlayerName" ColumnName="PlayerName" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserTables">
+            <EntityTypeMapping TypeName="SportsCampaignDBModel.UserTable">
+              <MappingFragment StoreEntitySet="UserTable">
+                <ScalarProperty Name="userType" ColumnName="userType" />
+                <ScalarProperty Name="userPassword" ColumnName="userPassword" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

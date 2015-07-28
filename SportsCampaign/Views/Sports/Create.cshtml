@@ -1,0 +1,64 @@
+﻿@model SportsCampaign.Models.RegisterTable
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/_MyTemplateLayoutPage.cshtml";
+}
+
+
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Registration Information</legend>
+        
+        <div>
+            <div class="form-group col-md-10">
+                First Name
+                @Html.TextBoxFor(model => model.firstName, new { @class = "form-control" })
+                <span style="color:red">@Html.ValidationMessageFor(model => model.firstName)</span>
+            </div>
+
+            <div class="form-group col-md-10">
+                Last Name
+                @Html.TextBoxFor(model => model.lastName, new { @class = "form-control" })
+                <span style="color:red">@Html.ValidationMessageFor(model => model.lastName)</span>
+            </div>
+
+            <div class="form-group col-md-10">
+                Email
+                @Html.TextBoxFor(model => model.email, new { @class = "form-control" })
+                <span style="color:red">@Html.ValidationMessageFor(model => model.email)</span>
+            </div>
+
+            <div class="form-group col-md-10">
+                User Name
+                @Html.TextBoxFor(model => model.userName, new { @class = "form-control" })
+                <span style="color:red">@Html.ValidationMessageFor(model => model.userName)</span>
+            </div>
+
+            <div class="form-group col-md-10">
+                Password
+                @Html.TextBoxFor(model => model.userPassword, new { @class = "form-control" })
+                <span style="color:red">@Html.ValidationMessageFor(model => model.userPassword)</span>
+            </div>
+
+        </div>
+        <div style="float:left;">
+            <div class="container">
+                <input type="submit" value="Register" class="pull-left btn-primary" style="width:250px; padding:5px;"/>
+            </div>
+        </div>
+    </fieldset>
+    <div style="color:green">
+        @ViewBag.msg
+    </div>
+}
+
+
+<div>
+    @Html.ActionLink("Back to List", "Index","Home")
+</div>
+

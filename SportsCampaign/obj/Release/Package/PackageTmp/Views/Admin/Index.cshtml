@@ -1,0 +1,56 @@
+﻿@model IEnumerable<SportsCampaign.Models.CampaignTable>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_AdminLayoutPage.cshtml";
+}
+
+
+
+
+<table class="table table-striped table-bordered table-hover">
+    <tr>
+        <th>
+            Campaign Name
+        </th>
+        <th>
+            Campaign Description
+        </th>
+        <th>
+            Catagory
+        </th>
+        <th>
+            Duration
+        </th>
+        <th>
+            Instructor Name
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.campaignName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.campaignDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.catagoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.instructorName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id })
+            </td>
+        </tr>
+    }
+
+</table>

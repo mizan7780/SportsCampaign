@@ -1,0 +1,128 @@
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\SportsCampaign.dll.config
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\SportsCampaign.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\SportsCampaign.pdb
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\EntityFramework.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\EntityFramework.SqlServer.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\Microsoft.Web.Infrastructure.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\Newtonsoft.Json.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Net.Http.Formatting.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.Helpers.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.Http.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.Http.WebHost.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.Mvc.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.Razor.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Deployment.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Razor.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\EntityFramework.xml
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\EntityFramework.SqlServer.xml
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\Newtonsoft.Json.xml
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Net.Http.Formatting.xml
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.Helpers.xml
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.Http.xml
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.Http.WebHost.xml
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.Mvc.xml
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.Razor.xml
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.xml
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Deployment.xml
+I:\MVC Project\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Razor.xml
+I:\MVC Project\SportsCampaign\SportsCampaign\obj\Debug\SportsCampaign.csprojResolveAssemblyReference.cache
+I:\MVC Project\SportsCampaign\SportsCampaign\obj\Debug\SportsCampaign.dll
+I:\MVC Project\SportsCampaign\SportsCampaign\obj\Debug\SportsCampaign.pdb
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\SportsCampaign.dll.config
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\SportsCampaign.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\SportsCampaign.pdb
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\EntityFramework.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\EntityFramework.SqlServer.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\Microsoft.Web.Infrastructure.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\Newtonsoft.Json.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Net.Http.Formatting.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Helpers.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Http.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Http.WebHost.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Mvc.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Razor.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Deployment.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Razor.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\EntityFramework.xml
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\EntityFramework.SqlServer.xml
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\Newtonsoft.Json.xml
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Net.Http.Formatting.xml
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Helpers.xml
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Http.xml
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Http.WebHost.xml
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Mvc.xml
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Razor.xml
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.xml
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Deployment.xml
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Razor.xml
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\obj\Debug\SportsCampaign.csprojResolveAssemblyReference.cache
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\obj\Debug\SportsCampaign.dll
+D:\New folder\SportsCampaign\SportsCampaign\SportsCampaign\obj\Debug\SportsCampaign.pdb
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\SportsCampaign.dll.config
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\SportsCampaign.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\SportsCampaign.pdb
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\EntityFramework.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\EntityFramework.SqlServer.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\Microsoft.Web.Infrastructure.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\Newtonsoft.Json.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Net.Http.Formatting.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Helpers.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Http.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Http.WebHost.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Mvc.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Razor.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Deployment.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Razor.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\EntityFramework.xml
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\EntityFramework.SqlServer.xml
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\Newtonsoft.Json.xml
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Net.Http.Formatting.xml
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Helpers.xml
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Http.xml
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Http.WebHost.xml
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Mvc.xml
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Razor.xml
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.xml
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Deployment.xml
+I:\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Razor.xml
+I:\SportsCampaign\SportsCampaign\SportsCampaign\obj\Debug\SportsCampaign.csprojResolveAssemblyReference.cache
+I:\SportsCampaign\SportsCampaign\SportsCampaign\obj\Debug\SportsCampaign.dll
+I:\SportsCampaign\SportsCampaign\SportsCampaign\obj\Debug\SportsCampaign.pdb
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\SportsCampaign.dll.config
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\SportsCampaign.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\SportsCampaign.pdb
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\EntityFramework.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\EntityFramework.SqlServer.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\Microsoft.Web.Infrastructure.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\Newtonsoft.Json.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Net.Http.Formatting.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Helpers.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Http.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Http.WebHost.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Mvc.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Razor.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Deployment.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Razor.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\EntityFramework.xml
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\EntityFramework.SqlServer.xml
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\Newtonsoft.Json.xml
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Net.Http.Formatting.xml
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Helpers.xml
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Http.xml
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Http.WebHost.xml
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Mvc.xml
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.Razor.xml
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.xml
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Deployment.xml
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\bin\System.Web.WebPages.Razor.xml
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\obj\Debug\SportsCampaign.csprojResolveAssemblyReference.cache
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\obj\Debug\SportsCampaign.dll
+D:\MVC Project\SportsCampaign\SportsCampaign\SportsCampaign\SportsCampaign\obj\Debug\SportsCampaign.pdb

@@ -1,0 +1,51 @@
+﻿@model SportsCampaign.Models.CampaignTable
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/_AdminLayoutPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Campaign Information</legend>
+
+    <div class="display-label">
+         Campaign Name
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.campaignName)
+    </div>
+
+    <div class="display-label">
+        Campaign Description
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.campaignDescription)
+    </div>
+
+    <div class="display-label">
+         Catagory
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.catagoryName)
+    </div>
+
+    <div class="display-label">
+         Duration
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Duration)
+    </div>
+
+    <div class="display-label">
+         Instructor Name
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.instructorName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

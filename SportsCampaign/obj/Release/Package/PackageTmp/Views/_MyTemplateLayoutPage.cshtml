@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Open+Sans:400,300,600,700,800" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Content/fonts.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <div id="logo" class="container">
+        <h1><a href="#" class="icon icon-spinner"><span>Sports Campaign</span></a></h1>
+    </div>
+    <div id="header">
+        <div id="menu" class="container">
+            <ul>
+                <li>@Html.ActionLink("Book Now", "Create", "CampaignBooked")</li>
+                <li>@Html.ActionLink("Registration", "Create", "Sports")</li>
+                <li>@Html.ActionLink("Gallery", "Gallery", "Home")</li>
+                <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact Us", "Create", "Contract")</li>
+                <li>@Html.ActionLink("Login", "Login", "Sports")</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>

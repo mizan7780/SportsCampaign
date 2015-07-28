@@ -1,0 +1,55 @@
+﻿@model SportsCampaign.Models.RegisterTable
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/_MyTemplateLayoutPage.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>RegisterTable</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.firstName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.firstName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.lastName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.lastName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.userName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.userName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.userPassword)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.userPassword)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

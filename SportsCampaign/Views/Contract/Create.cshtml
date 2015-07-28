@@ -1,0 +1,110 @@
+﻿@model SportsCampaign.Models.contactTable
+
+@{
+    ViewBag.Title = "Contact Information";
+    Layout = "~/Views/_MyTemplateLayoutPage.cshtml";
+}
+
+
+<div id="page-wrapper">
+    <div id="banner" class="container"><a href="#"><img src="~/Content/images/pic06.jpg" width="960" height="300" alt="" /></a></div>
+    <div id="featured" class="container">
+        <div class="box">
+            <div class="title">
+                <h2>Recent Updates</h2>
+            </div>
+            <p>Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. <br />Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa.<br /> Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
+        </div>
+        <div id="box1">
+            <a href="#"><img src="~/Content/images/mizan.jpg" width="260" height="200" /></a>
+            <h2 class="subtitle">Mohammad Mizanur Rahman</h2>
+            <p>Contact No : 01670-092930 <br />Email :mizan7780@gmail.com <br />Address: Creative Visions Ltd. Ananta Plaza, 136 Elephant Road, Dhaka-1205</p>
+            <ul class="contact">
+                <li><a href="#" class="icon icon-facebook"><span></span></a></li>
+                <li><a href="#" class="icon icon-dribbble"><span>Pinterest</span></a></li>
+                <li><a href="#" class="icon icon-tumblr"><span>Google+</span></a></li>
+            </ul>
+        </div>
+        <div id="box2">
+            <a href="#"><img src="~/Content/images/pic02.jpg" alt="" /></a>
+            <h2 class="subtitle">Etiam posuere augue</h2>
+            <p>Proin eu wisi suscipit nulla suscipit interdum. Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit.</p>
+            <ul class="contact">
+                <li><a href="#" class="icon icon-facebook"><span></span></a></li>
+                <li><a href="#" class="icon icon-dribbble"><span>Pinterest</span></a></li>
+                <li><a href="#" class="icon icon-tumblr"><span>Google+</span></a></li>
+            </ul>
+        </div>
+        <div id="box3">
+            <a href="#"><img src="~/Content/images/pic03.jpg" alt="" /></a>
+            <h2 class="subtitle">Nulla luctus eleifend</h2>
+            <p>Donec mattis libero eget urna. Duis pretium velit ac mauris. Proin eu wisi suscipit nulla suscipit interdum. Nullam non wisi.</p>
+            <ul class="contact">
+                <li><a href="#" class="icon icon-facebook"><span></span></a></li>
+                <li><a href="#" class="icon icon-dribbble"><span>Pinterest</span></a></li>
+                <li><a href="#" class="icon icon-tumblr"><span>Google+</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="page" class="container">
+        <div style="color: #000000; width: 400px; ">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+
+                <fieldset style="width: 400px;">
+                    <legend style="font-size:large">Contact with us</legend>
+                    <div class="form-group col-md-10">
+                        Name
+                        @Html.TextBoxFor(model => model.senderName, new { @class = "form-control" })
+                        <span style="color:red">@Html.ValidationMessageFor(model => model.senderName)</span>
+                    </div>
+
+                    <div class="form-group col-md-10">
+                        Email
+                        @Html.TextBoxFor(model => model.senderEmail, new { @class = "form-control" })
+                        <span style="color:red">@Html.ValidationMessageFor(model => model.senderEmail)</span>
+                    </div>
+                    <div class="form-group col-md-10">
+                        Message
+                        @Html.TextAreaFor(model => model.senderMessage, new { @class = "form-control" })
+                        <span style="color:red">@Html.ValidationMessageFor(model => model.senderMessage)</span>
+                    </div>
+
+                    <div style="float:left;">
+                        <div class="container">
+                            <input type="submit" value="Send" class="pull-left btn-success" />
+                        </div>
+                    </div>
+                </fieldset>
+            }
+
+        </div>
+    </div>
+</div>
+<div id="footer-wrapper">
+    <div id="footer" class="container">
+        <div id="fbox1">
+            <h2>Maecenas luctus</h2>
+            <p>Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit ac mauris. Proin eu wisi suscipit nulla suscipit interdum.</p>
+            <a href="#" class="button icon icon-arrow-right">Learn More</a>
+        </div>
+        <div id="fbox2">
+            <h2>Integer gravida</h2>
+            <p>Proin eu wisi suscipit nulla suscipit interdum. Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit ac mauris.</p>
+            <a href="#" class="button icon icon-arrow-right">Learn More</a>
+        </div>
+        <div id="fbox3">
+            <h2>Praesent scelerisque</h2>
+            <p>Donec mattis libero eget urna. Duis pretium velit ac mauris. Proin eu wisi suscipit nulla suscipit interdum. Nullam non wisi a sem semper eleifend.</p>
+            <a href="#" class="button icon icon-arrow-right">Learn More</a>
+        </div>
+    </div>
+</div>
+<div id="copyright">
+    <p>Copyright (c) 2013 Sitename.com. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>.</p>
+</div>
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@

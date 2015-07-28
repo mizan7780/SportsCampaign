@@ -1,0 +1,43 @@
+﻿@model IEnumerable<SportsCampaign.Models.contactTable>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_AdminLayoutPage.cshtml";
+}
+
+<br /><br />
+
+
+<table class ="table table-striped table-bordered table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.senderName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.senderEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.senderMessage)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.senderName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.senderEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.senderMessage)
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.id })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,71 @@
+﻿@model SportsCampaign.Models.RegisterTable
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/_MyTemplateLayoutPage.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>RegisterTable</legend>
+
+        @Html.HiddenFor(model => model.id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.firstName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.firstName)
+            @Html.ValidationMessageFor(model => model.firstName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.lastName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.lastName)
+            @Html.ValidationMessageFor(model => model.lastName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.email)
+            @Html.ValidationMessageFor(model => model.email)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.userName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.userName)
+            @Html.ValidationMessageFor(model => model.userName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.userPassword)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.userPassword)
+            @Html.ValidationMessageFor(model => model.userPassword)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@

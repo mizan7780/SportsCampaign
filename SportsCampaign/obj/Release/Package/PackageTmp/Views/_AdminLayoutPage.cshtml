@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/tooplate_style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="tooplate_header_wrapper">
+
+        <div id="tooplate_header">
+
+            <div id="site_title">
+
+                <h1><a href="#"><img src="~/Content/images/tooplate_logo.png" /><span>Free HTML Template</span></a></h1>
+
+            </div> 
+
+            <div id="header_phone_no">
+
+                Contact Me: <span>016 70 09 29 30</span>
+
+            </div>
+
+            <div class="cleaner_h10"></div>
+
+            <div id="tooplate_menu">
+
+                <div id="home_menu"><a href="#"></a></div>
+
+                <ul>
+                    <li>@Html.ActionLink("Set Role","Index","User")</li>
+                    <li>@Html.ActionLink("Create Camp", "Create", "Admin")</li>
+                    <li>@Html.ActionLink("Show Camp", "Index", "Admin")</li>
+                    <li>@Html.ActionLink("Message", "Index", "Contract")</li>
+                    <li>@Html.ActionLink("Client", "Index", "Sports")</li>
+                    <li>@Html.ActionLink("Logout", "Index", "Home")</li>
+                </ul>
+
+            </div> 
+
+        </div>
+    </div>
+
+    <div id="tooplate_middle_wrapper1">
+        <div id="tooplate_middle_wrapper2">
+            <div id="tooplate_middle">
+
+                <h1>BE ACTIVE<span>with the best coffee</span></h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut lorem id mauris cursus pellentesque. Donec lobortis magna at orci blandit ac lobortis ipsum vestibulum.</p>
+
+                <a href="#"><span>+</span> More</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+    <div class="cleaner"></div>
+
+    <div id="tooplate_footer_wrapper">
+
+        <div id="tooplate_footer">
+
+            Copyright © 2048 <a href="#">Company Name</a> - Design: <a href="http://www.tooplate.com">tooplate</a>
+
+        </div> <!-- end of tooplate_footer -->
+
+    </div> 
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>

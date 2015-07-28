@@ -1,0 +1,54 @@
+﻿@model SportsCampaign.Models.CampaignTable
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/_AdminLayoutPage.cshtml";
+}
+
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>CampaignTable</legend>
+
+    <div class="display-label">
+         Campaign Name
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.campaignName)
+    </div>
+
+    <div class="display-label">
+         Campaign Description
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.campaignDescription)
+    </div>
+
+    <div class="display-label">
+         Catagory Name
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.catagoryName)
+    </div>
+
+    <div class="display-label">
+        Duration
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Duration)
+    </div>
+
+    <div class="display-label">
+         Instructor Name
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.instructorName)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

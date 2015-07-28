@@ -1,0 +1,38 @@
+﻿@model IEnumerable<SportsCampaign.Models.RegisterTable>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_MyTemplateLayoutPage.cshtml";
+}
+
+
+
+<table class="table table-striped table-bordered table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.firstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.firstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        
+    </tr>
+}
+
+</table>

@@ -1,0 +1,51 @@
+﻿@model SportsCampaign.Models.RegisterTable
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/_MyTemplateLayoutPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>RegisterTable</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.firstName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.firstName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.lastName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.lastName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.userName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.userName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.userPassword)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.userPassword)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

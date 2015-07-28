@@ -1,0 +1,35 @@
+﻿@model SportsCampaign.Models.UserTable
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_MyTemplateLayoutPage.cshtml";
+}
+
+<br /><br />
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+   <fieldset>
+        <legend>Login Information</legend>
+
+        <div class="form-group col-md-5">
+            User Name
+            @Html.TextBoxFor(model => model.userName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.userName)
+        </div>
+        <div class="form-group col-md-5">
+            Password
+            @Html.PasswordFor(model => model.userPassword, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.userPassword)
+        </div><br />
+        <div class="form-group">
+            <input type="submit" value="Log in" class="btn btn-default" />
+        </div>
+        <p style="color:red;">
+            @ViewBag.msg
+        </p>
+    </fieldset>
+}
+
